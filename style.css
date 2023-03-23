@@ -1,0 +1,64 @@
+body {
+    background-image: url("/light.jpg");
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.heading {
+    font-size: 40px;
+}
+
+.center-flex {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.button-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 400px
+}
+
+.mybtn {
+    width: 175px;
+    margin: 5px;
+}
+
+.mylist {
+    width: 90%;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialbar {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.social {
+    margin: 5px;
+}
+
+.done {
+    text-decoration: line-through !important;
+    color: gray !important;
+}
