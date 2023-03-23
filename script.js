@@ -41,6 +41,7 @@ window.onload= function (){
             ↓
             </button>
         </div>`));
+        $(".form-control").val("");
         $(".btn-primary")[0].disabled=true;
         $(".btn-success")[0].disabled=true;
     })
