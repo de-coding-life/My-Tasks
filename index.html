@@ -30,12 +30,12 @@
         <!-- Div for Input & Buttons -->
         <div class="input-group mb-3 center-flex">
             <!-- Input -->
-            <input type="text" class="form-control" placeholder="Enter Task" aria-label="Username"
-                aria-describedby="basic-addon1" style="width:60%; height:40px">
+            <input onkeyup="btnstatus()" type=" text" class="form-control" placeholder="Enter Task"
+                aria-label="Username" aria-describedby="basic-addon1" style="width:60%; height:40px">
             <!-- Flex for Buttons -->
             <div class="button-flex">
                 <!-- Button -->
-                <button type="button" class="btn btn-primary mybtn">
+                <button type="button" class="btn btn-primary mybtn" disabled="true">
                     <!-- Bootstrap Icon Starts -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                         class="bi bi-file-plus-fill" viewBox="0 0 20 20">
@@ -46,7 +46,7 @@
                     Add
                 </button>
                 <!-- Button -->
-                <button type="button" class="btn btn-success mybtn">
+                <button type="button" class="btn btn-success mybtn" disabled="true">
                     <!-- Bootstrap Icon Starts -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                         class="bi bi-backspace-fill" viewBox="0 0 20 20">

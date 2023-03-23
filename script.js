@@ -7,6 +7,18 @@ function up(event){
 function down(event){
     event.target.parentElement.parentElement.insertBefore(event.target.parentElement.nextElementSibling,event.target.parentElement);
 }
+function btnstatus(){
+    if ($("input").val()=="")
+    {
+        $(".btn-primary")[0].disabled=true;
+        $(".btn-success")[0].disabled=true;
+    }
+    else
+    {
+        $(".btn-primary")[0].disabled=false;
+        $(".btn-success")[0].disabled=false;
+    }
+}
 window.onload= function (){
     // Script for New Button
     $(".btn-primary").click( () => {
@@ -29,7 +41,8 @@ window.onload= function (){
             ↓
             </button>
         </div>`));
-        $(".form-control").val("");
+        $(".btn-primary")[0].disabled=true;
+        $(".btn-success")[0].disabled=true;
     })
     // Script for Remove Button
     $(".btn-success").click( () => {
