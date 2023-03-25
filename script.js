@@ -1,5 +1,8 @@
 function func(event){
+    if (event.target.nodeName=="BUTTON")
     event.target.classList.toggle("done");
+    else
+    event.target.parentElement.classList.toggle("done");
 }
 function up(event){
     event.target.parentElement.parentElement.insertBefore(event.target.parentElement,event.target.parentElement.previousElementSibling);
